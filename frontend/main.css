@@ -1,0 +1,75 @@
+body {
+    margin: 40px auto;
+    font-family: Arial;
+    max-width: 640px;
+}
+
+.question {
+    margin-bottom: 60px;
+}
+
+hr {
+    margin: 40px;
+    border: none;
+    border-top: 1px solid #bbb;
+}
+
+/********************************
+ * QUESTION 5.
+ *******************************/
+.q6-wrapper {
+    background: #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.q6-wrapper .q6-block {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: #333;
+}
+
+.q6-wrapper .q6-block:nth-child(odd)
+ {
+    background: #00FF00;
+}
+
+/********************************
+ * QUESTION 6.
+ *******************************/
+.header {
+    background-color: #F00;
+    color: #FFF;
+    text-align: center;
+}
+
+.file-name {
+    color: #00F;
+    font-weight: bold;
+}
+
+#my-name {
+    text-transform: uppercase;
+}
+
+/********************************
+ * OTHERS.
+ *******************************/
+.hidden {
+    display: none;
+}
+
+.confirmation {
+    color: #080;
+    margin: 5px;
+}
+
+.error {
+    color: #F00;
+    margin: 5px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

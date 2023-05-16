@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  db:
+    container_name: bennu-db
+    image: mysql
+    environment:
+      MYSQL_DATABASE: bennu-db
+      MYSQL_USER: bennu-user
+      MYSQL_PASSWORD: bennu-password
+      MYSQL_ROOT_PASSWORD: bennu-root-password
+    ports:
+      - "3307:3306"
+    restart: always    
+
+  backend:
+    container_name: bennu-backend
+    build: ./docker/backend
+    ports:
+      - "89:80"
+    volumes:
+      - ./backend:/var/www/html
+      - ./docker/backend:/etc/apache2/sites-enabled:ro
+    depends_on:
+      - db
+
+  frontend:
+    container_name: bennu-frontend
+    image: nginx
+    ports:
+      - "88:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
