@@ -1,7 +1,7 @@
 # Bennu
 
 1. Clone repository.
-2. Execute `copy .env.example .env`.
+2. Execute `sudo cp ./backend/.env.example ./backend/.env`
 3. Execute `sudo docker-compose up -d --build`
 4. Execute `sudo docker-compose exec backend bash`
 5. Execute `chmod 777 ./storage -R`
