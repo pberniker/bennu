@@ -1,9 +1,11 @@
 # Bennu
 
-1. Execute `sudo docker-compose up -d --build`
-2. Execute `sudo docker-compose exec backend bash`
-3. Execute `chmod 777 ./storage -R`
-4. Execute `composer install`
-5. Execute `php artisan migrate`
-6. Execute `php artisan db:seed`
-7. Open `http://localhost:88`
+1. Clone repository.
+2. Execute `copy .env.example .env`.
+3. Execute `sudo docker-compose up -d --build`
+4. Execute `sudo docker-compose exec backend bash`
+5. Execute `chmod 777 ./storage -R`
+6. Execute `composer install`
+7. Execute `php artisan migrate`
+8. Execute `php artisan db:seed`
+9. Open `http://localhost:88`
